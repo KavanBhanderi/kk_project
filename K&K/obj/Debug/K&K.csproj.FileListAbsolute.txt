@@ -1,0 +1,12 @@
+D:\kano_paython\K&K\K&K\bin\Debug\K&K.exe.config
+D:\kano_paython\K&K\K&K\bin\Debug\K&K.exe
+D:\kano_paython\K&K\K&K\bin\Debug\K&K.pdb
+D:\kano_paython\K&K\K&K\obj\Debug\K&K.csproj.AssemblyReference.cache
+D:\kano_paython\K&K\K&K\obj\Debug\K_K.Form1.resources
+D:\kano_paython\K&K\K&K\obj\Debug\K_K.Properties.Resources.resources
+D:\kano_paython\K&K\K&K\obj\Debug\K&K.csproj.GenerateResource.cache
+D:\kano_paython\K&K\K&K\obj\Debug\K&K.csproj.CoreCompileInputs.cache
+D:\kano_paython\K&K\K&K\obj\Debug\K&K.exe
+D:\kano_paython\K&K\K&K\obj\Debug\K&K.pdb
+D:\kano_paython\K&K\K&K\bin\Debug\k&k.mdf
+D:\kano_paython\K&K\K&K\bin\Debug\k&k_log.ldf
