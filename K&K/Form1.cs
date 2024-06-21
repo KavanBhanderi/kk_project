@@ -21,18 +21,29 @@ namespace K_K
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            string sql = "select * from login where username='" + txtuser.Text +"' AND password='" + txtpass.Text + "'";
-            SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);    
-            if(dt.Rows.Count > 0)
+            if(txtpass.Text.Length != 0 && txtuser.Text.Length !=0)
             {
-                MessageBox.Show("Login Succesfully","Information",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string sql = "select * from login where username='" + txtuser.Text + "' AND password='" + txtpass.Text + "'";
+                SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    MessageBox.Show("Login Succesfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dashboard db = new dashboard();
+                    db.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username & Password Incoorect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Username & Password Incoorect","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Username or Password Empty","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+           
         }
     }
 }
