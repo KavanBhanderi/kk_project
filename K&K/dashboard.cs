@@ -29,5 +29,12 @@ namespace K_K
             this.Hide();
             fn.Show();
         }
+
+        private void additm_Click(object sender, EventArgs e)
+        {
+            AddItem additm = new AddItem();
+            additm.Show();
+            panel2.Hide();
+        }
     }
 }

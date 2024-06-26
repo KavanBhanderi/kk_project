@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exitbtn = new System.Windows.Forms.Button();
+            this.btnlogout = new System.Windows.Forms.LinkLabel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.additm = new System.Windows.Forms.Button();
             this.plcorder = new System.Windows.Forms.Button();
+            this.exitbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnlogout = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,18 +53,17 @@
             this.panel1.Size = new System.Drawing.Size(200, 497);
             this.panel1.TabIndex = 0;
             // 
-            // exitbtn
+            // btnlogout
             // 
-            this.exitbtn.BackColor = System.Drawing.Color.Red;
-            this.exitbtn.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitbtn.ForeColor = System.Drawing.Color.Black;
-            this.exitbtn.Location = new System.Drawing.Point(821, 9);
-            this.exitbtn.Name = "exitbtn";
-            this.exitbtn.Size = new System.Drawing.Size(34, 27);
-            this.exitbtn.TabIndex = 6;
-            this.exitbtn.Text = "X";
-            this.exitbtn.UseVisualStyleBackColor = false;
-            this.exitbtn.Click += new System.EventHandler(this.button1_Click);
+            this.btnlogout.AutoSize = true;
+            this.btnlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.Location = new System.Drawing.Point(102, 464);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(78, 24);
+            this.btnlogout.TabIndex = 2;
+            this.btnlogout.TabStop = true;
+            this.btnlogout.Text = "LogOut";
+            this.btnlogout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnlogout_LinkClicked);
             // 
             // button4
             // 
@@ -100,6 +100,7 @@
             this.additm.TabIndex = 3;
             this.additm.Text = "Add Items";
             this.additm.UseVisualStyleBackColor = false;
+            this.additm.Click += new System.EventHandler(this.additm_Click);
             // 
             // plcorder
             // 
@@ -113,25 +114,30 @@
             this.plcorder.Text = "Place Order";
             this.plcorder.UseVisualStyleBackColor = false;
             // 
+            // exitbtn
+            // 
+            this.exitbtn.BackColor = System.Drawing.Color.Red;
+            this.exitbtn.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitbtn.ForeColor = System.Drawing.Color.Black;
+            this.exitbtn.Location = new System.Drawing.Point(821, 9);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(34, 27);
+            this.exitbtn.TabIndex = 6;
+            this.exitbtn.Text = "X";
+            this.exitbtn.UseVisualStyleBackColor = false;
+            this.exitbtn.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel2
             // 
+            this.panel2.AllowDrop = true;
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(218, 42);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(637, 497);
             this.panel2.TabIndex = 1;
-            // 
-            // btnlogout
-            // 
-            this.btnlogout.AutoSize = true;
-            this.btnlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogout.Location = new System.Drawing.Point(102, 464);
-            this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(78, 24);
-            this.btnlogout.TabIndex = 2;
-            this.btnlogout.TabStop = true;
-            this.btnlogout.Text = "LogOut";
-            this.btnlogout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnlogout_LinkClicked);
             // 
             // dashboard
             // 
