@@ -32,9 +32,16 @@ namespace K_K
 
         private void additm_Click(object sender, EventArgs e)
         {
-            AddItem additm = new AddItem();
-            additm.Show();
-            panel2.Hide();
+            AddItem addItem = new AddItem();
+            this.Hide();
+            addItem.Show();
+         
+          
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }
