@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,20 +23,19 @@ namespace K_K
         {
             if (txtcategory.Text != string.Empty && txtItem.Text != string.Empty && txtprice.Text != string.Empty)
             {
-                string sql = "insert into items VALUES('" + txtcategory.Text+"','"+txtItem.Text+"','"+txtprice.Text+"')";
+                string sql = "insert into items values('" + txtcategory.Text + "','" + txtItem.Text + "','" + txtprice.Text + "')";
                 SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-               MessageBox.Show("Record Inserted Succesfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtItem.Text = string.Empty;
-                    txtcategory.Text = string.Empty;
-                    txtprice.Text = string.Empty;
-
-             }
+                MessageBox.Show("Record Inserted Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             else
             {
                 MessageBox.Show("Not Inserted","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            txtItem.Text = string.Empty;
+            txtcategory.Text = string.Empty;
+            txtprice.Text = string.Empty;
         }
 
         private void exit_Click(object sender, EventArgs e)

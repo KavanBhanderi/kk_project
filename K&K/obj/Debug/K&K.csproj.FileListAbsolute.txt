@@ -8,7 +8,7 @@ D:\kano_paython\K&K\K&K\obj\Debug\K&K.csproj.GenerateResource.cache
 D:\kano_paython\K&K\K&K\obj\Debug\K&K.csproj.CoreCompileInputs.cache
 D:\kano_paython\K&K\K&K\obj\Debug\K&K.exe
 D:\kano_paython\K&K\K&K\obj\Debug\K&K.pdb
-D:\kano_paython\K&K\K&K\bin\Debug\k&k.mdf
-D:\kano_paython\K&K\K&K\bin\Debug\k&k_log.ldf
 D:\kano_paython\K&K\K&K\obj\Debug\K_K.dashboard.resources
 D:\kano_paython\K&K\K&K\obj\Debug\K_K.AddItem.resources
+D:\kano_paython\K&K\K&K\bin\Debug\bin\Debug\kkdb.mdf
+D:\kano_paython\K&K\K&K\bin\Debug\bin\Debug\kkdb_log.ldf

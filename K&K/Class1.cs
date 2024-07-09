@@ -11,6 +11,6 @@ namespace K_K
 {
     internal class Class1
     {
-        public static SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\k&k.mdf;Integrated Security=True");
+        public static SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\kkdb.mdf;Integrated Security=True");
     }
 }
