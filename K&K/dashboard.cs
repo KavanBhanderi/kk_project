@@ -43,5 +43,17 @@ namespace K_K
         {
          
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Remove rpage = new Remove();
+            this.Hide();
+            rpage.Show();
+        }
     }
 }
