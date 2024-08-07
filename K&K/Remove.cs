@@ -35,5 +35,19 @@ namespace K_K
             adapter.Fill(dt);   
             dataGridView1.DataSource = dt;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            dashboard db = new dashboard();
+            Remove rm = new Remove();
+            this.Close();
+            db.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        
+        }
     }
 }
