@@ -20,7 +20,7 @@ namespace K_K
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("itemname LIKE '{0}%'", txtsearch.Text);
         }
 
         private void Remove_Load(object sender, EventArgs e)
@@ -48,6 +48,14 @@ namespace K_K
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         
+        }
+
+        private void REMOVE_ITEM_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(row.Index);
+            }
         }
     }
 }

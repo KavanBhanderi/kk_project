@@ -21,21 +21,22 @@ namespace K_K
         }
         private void Add_Item_Click(object sender, EventArgs e)
         {
-            if (txtcategory.Text != string.Empty && txtItem.Text != string.Empty && txtprice.Text != string.Empty)
+            if (txtcategory.Text != "--Select Category--" && txtItem.Text != string.Empty && txtprice.Text != string.Empty)
             {
                 string sql = "insert into items values('" + txtcategory.Text + "','" + txtItem.Text + "','" + txtprice.Text + "')";
                 SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 MessageBox.Show("Record Inserted Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtItem.Text = string.Empty;
+                txtcategory.Text = string.Empty;
+                txtprice.Text = string.Empty;
             }
             else
             {
                 MessageBox.Show("Not Inserted","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txtItem.Text = string.Empty;
-            txtcategory.Text = string.Empty;
-            txtprice.Text = string.Empty;
+          
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -44,6 +45,21 @@ namespace K_K
             AddItem addItem = new AddItem(); 
             this.Close();
             db.Show();
+        }
+
+        private void Category_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Price_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

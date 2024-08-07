@@ -42,42 +42,53 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(246, 38);
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(191, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 18);
+            this.label1.Size = new System.Drawing.Size(114, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Item";
             // 
             // Category
             // 
             this.Category.AutoSize = true;
-            this.Category.Location = new System.Drawing.Point(146, 110);
+            this.Category.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Category.ForeColor = System.Drawing.Color.Black;
+            this.Category.Location = new System.Drawing.Point(30, 91);
             this.Category.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Category.Name = "Category";
-            this.Category.Size = new System.Drawing.Size(62, 18);
+            this.Category.Size = new System.Drawing.Size(81, 18);
             this.Category.TabIndex = 1;
-            this.Category.Text = "Category";
+            this.Category.Text = "Category :";
+            this.Category.Click += new System.EventHandler(this.Category_Click);
             // 
             // item_name
             // 
             this.item_name.AutoSize = true;
-            this.item_name.Location = new System.Drawing.Point(146, 192);
+            this.item_name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.item_name.ForeColor = System.Drawing.Color.Black;
+            this.item_name.Location = new System.Drawing.Point(30, 175);
             this.item_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.item_name.Name = "item_name";
-            this.item_name.Size = new System.Drawing.Size(79, 18);
+            this.item_name.Size = new System.Drawing.Size(99, 18);
             this.item_name.TabIndex = 2;
-            this.item_name.Text = "Item Name";
+            this.item_name.Text = "Item Name :";
+            this.item_name.Click += new System.EventHandler(this.item_name_Click);
             // 
             // Price
             // 
             this.Price.AutoSize = true;
-            this.Price.Location = new System.Drawing.Point(146, 275);
+            this.Price.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.ForeColor = System.Drawing.Color.Black;
+            this.Price.Location = new System.Drawing.Point(30, 258);
             this.Price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(41, 18);
+            this.Price.Size = new System.Drawing.Size(57, 18);
             this.Price.TabIndex = 3;
-            this.Price.Text = "Price";
+            this.Price.Text = "Price :";
+            this.Price.Click += new System.EventHandler(this.Price_Click);
             // 
             // txtcategory
             // 
@@ -88,46 +99,49 @@
             "South Indian",
             "Thali",
             "Indian"});
-            this.txtcategory.Location = new System.Drawing.Point(151, 145);
+            this.txtcategory.Location = new System.Drawing.Point(33, 124);
             this.txtcategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtcategory.Name = "txtcategory";
-            this.txtcategory.Size = new System.Drawing.Size(355, 26);
+            this.txtcategory.Size = new System.Drawing.Size(464, 26);
             this.txtcategory.TabIndex = 4;
+            this.txtcategory.Text = "--Select Category--";
             // 
             // txtItem
             // 
-            this.txtItem.Location = new System.Drawing.Point(151, 230);
+            this.txtItem.Location = new System.Drawing.Point(33, 209);
             this.txtItem.Margin = new System.Windows.Forms.Padding(4);
             this.txtItem.Name = "txtItem";
-            this.txtItem.Size = new System.Drawing.Size(355, 25);
+            this.txtItem.Size = new System.Drawing.Size(464, 25);
             this.txtItem.TabIndex = 5;
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(151, 313);
+            this.txtprice.Location = new System.Drawing.Point(33, 292);
             this.txtprice.Margin = new System.Windows.Forms.Padding(4);
             this.txtprice.Name = "txtprice";
-            this.txtprice.Size = new System.Drawing.Size(355, 25);
+            this.txtprice.Size = new System.Drawing.Size(464, 25);
             this.txtprice.TabIndex = 6;
             // 
             // Add_Item
             // 
-            this.Add_Item.Location = new System.Drawing.Point(250, 376);
+            this.Add_Item.BackColor = System.Drawing.Color.LimeGreen;
+            this.Add_Item.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Item.Location = new System.Drawing.Point(180, 343);
             this.Add_Item.Margin = new System.Windows.Forms.Padding(4);
             this.Add_Item.Name = "Add_Item";
-            this.Add_Item.Size = new System.Drawing.Size(112, 32);
+            this.Add_Item.Size = new System.Drawing.Size(124, 32);
             this.Add_Item.TabIndex = 7;
             this.Add_Item.Text = "Add Item";
-            this.Add_Item.UseVisualStyleBackColor = true;
+            this.Add_Item.UseVisualStyleBackColor = false;
             this.Add_Item.Click += new System.EventHandler(this.Add_Item_Click);
             // 
             // exit
             // 
             this.exit.BackColor = System.Drawing.Color.Red;
             this.exit.ForeColor = System.Drawing.Color.Black;
-            this.exit.Location = new System.Drawing.Point(605, 1);
+            this.exit.Location = new System.Drawing.Point(467, 12);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(29, 26);
+            this.exit.Size = new System.Drawing.Size(32, 26);
             this.exit.TabIndex = 8;
             this.exit.Text = "X";
             this.exit.UseVisualStyleBackColor = false;
@@ -135,9 +149,9 @@
             // 
             // AddItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 497);
+            this.ClientSize = new System.Drawing.Size(512, 410);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.Add_Item);
             this.Controls.Add(this.txtprice);
@@ -147,7 +161,8 @@
             this.Controls.Add(this.item_name);
             this.Controls.Add(this.Category);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddItem";
