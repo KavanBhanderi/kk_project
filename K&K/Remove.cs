@@ -47,15 +47,18 @@ namespace K_K
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-        
-        }
-
-        private void REMOVE_ITEM_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            if (MessageBox.Show("Delete Item?", "Important message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                dataGridView1.Rows.RemoveAt(row.Index);
+                int id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                string sql = "delete from items where id=" + id + "";
+                SqlDataAdapter adapter = new SqlDataAdapter( sql,Class1.con);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+                loaddata();
             }
         }
+
+        
     }
 }

@@ -46,7 +46,9 @@ namespace K_K
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            Update upage = new Update();    
+            this.Hide();    
+            upage.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

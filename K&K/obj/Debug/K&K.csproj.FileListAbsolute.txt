@@ -13,3 +13,4 @@ D:\kano_paython\K&K\K&K\obj\Debug\K_K.AddItem.resources
 D:\kano_paython\K&K\K&K\bin\Debug\bin\Debug\kkdb.mdf
 D:\kano_paython\K&K\K&K\bin\Debug\bin\Debug\kkdb_log.ldf
 D:\kano_paython\K&K\K&K\obj\Debug\K_K.Remove.resources
+D:\kano_paython\K&K\K&K\obj\Debug\K_K.Update.resources

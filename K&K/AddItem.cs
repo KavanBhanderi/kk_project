@@ -29,7 +29,7 @@ namespace K_K
                 da.Fill(dt);
                 MessageBox.Show("Record Inserted Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtItem.Text = string.Empty;
-                txtcategory.Text = string.Empty;
+                txtcategory.Text = "--Select Category--";
                 txtprice.Text = string.Empty;
             }
             else
