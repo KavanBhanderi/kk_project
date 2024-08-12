@@ -61,5 +61,10 @@ namespace K_K
         {
 
         }
+
+        private void txtcategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

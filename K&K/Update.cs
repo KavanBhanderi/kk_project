@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace K_K
 {
@@ -41,6 +42,48 @@ namespace K_K
         private void Update_Load(object sender, EventArgs e)
         {
             loaddata();
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            if (txtcmb.Text != "-- Select Category --" && txtitem.Text != string.Empty && txtprice.Text != string.Empty)
+            {
+                string sql = "update items set category='" + txtcmb.Text + "',itemname='" + txtitem.Text + "',price='" + txtprice.Text + "' where id=" + id + "";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, Class1.con);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                MessageBox.Show("Record Update", "Important", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtitem.Text = string.Empty;
+                txtcmb.Text = "--Select Category--";
+                txtprice.Text = string.Empty;
+                dataGridView1.DataSource = dt;
+                loaddata();
+               
+               
+            }
+            else
+            {
+                MessageBox.Show("Not Record Updated", "Important", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        int id;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+             id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            string category = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string  name = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            int price = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+
+            txtcmb.Text = category;
+            txtitem.Text = name;
+            txtprice.Text = price.ToString();
+
+        }
+
+        private void txtcmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
