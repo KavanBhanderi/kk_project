@@ -62,7 +62,7 @@
             this.Category.Size = new System.Drawing.Size(99, 22);
             this.Category.TabIndex = 1;
             this.Category.Text = "Category :";
-            this.Category.Click += new System.EventHandler(this.Category_Click);
+           // this.Category.Click += new System.EventHandler(this.Category_Click);
             // 
             // item_name
             // 
@@ -75,7 +75,7 @@
             this.item_name.Size = new System.Drawing.Size(119, 22);
             this.item_name.TabIndex = 2;
             this.item_name.Text = "Item Name :";
-            this.item_name.Click += new System.EventHandler(this.item_name_Click);
+//            this.item_name.Click += new System.EventHandler(this.item_name_Click);
             // 
             // Price
             // 
@@ -88,7 +88,7 @@
             this.Price.Size = new System.Drawing.Size(70, 22);
             this.Price.TabIndex = 3;
             this.Price.Text = "Price :";
-            this.Price.Click += new System.EventHandler(this.Price_Click);
+            //this.Price.Click += new System.EventHandler(this.Price_Click);
             // 
             // txtcategory
             // 
@@ -105,7 +105,7 @@
             this.txtcategory.Size = new System.Drawing.Size(464, 30);
             this.txtcategory.TabIndex = 4;
             this.txtcategory.Text = "--Select Category--";
-            this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
+           // this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
             // 
             // txtItem
             // 

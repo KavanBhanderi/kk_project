@@ -38,7 +38,6 @@ namespace K_K
             }
           
         }
-
         private void exit_Click(object sender, EventArgs e)
         {
             dashboard db = new dashboard();
@@ -47,24 +46,5 @@ namespace K_K
             db.Show();
         }
 
-        private void Category_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void item_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Price_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

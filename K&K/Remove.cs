@@ -17,12 +17,10 @@ namespace K_K
         {
             InitializeComponent();
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("itemname LIKE '{0}%'", txtsearch.Text);
         }
-
         private void Remove_Load(object sender, EventArgs e)
         {
             loaddata();
@@ -35,7 +33,6 @@ namespace K_K
             adapter.Fill(dt);   
             dataGridView1.DataSource = dt;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -44,7 +41,6 @@ namespace K_K
             this.Close();
             db.Show();
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (MessageBox.Show("Delete Item?", "Important message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)

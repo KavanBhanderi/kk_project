@@ -18,10 +18,9 @@ namespace K_K
         {
             InitializeComponent();
         }
-
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if(txtpass.Text.Length != 0 && txtuser.Text.Length !=0)
+            if (txtpass.Text.Length != 0 && txtuser.Text.Length !=0)
             {
                 string sql = "select * from login where username='" + txtuser.Text + "' AND password='" + txtpass.Text + "'";
                 SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
@@ -43,7 +42,6 @@ namespace K_K
             {
                 MessageBox.Show("Username or Password Empty","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
         }
     }
 }
