@@ -49,9 +49,11 @@ namespace K_K
             rpage.Show();
         }
 
-        private void dashboard_Load(object sender, EventArgs e)
+        private void plcorder_Click(object sender, EventArgs e)
         {
-
+            PlaceOrder p = new PlaceOrder();
+            this.Hide();
+            p.Show();
         }
     }
 }

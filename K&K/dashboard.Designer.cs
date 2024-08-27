@@ -122,6 +122,7 @@
             this.plcorder.TabIndex = 2;
             this.plcorder.Text = "Place Order";
             this.plcorder.UseVisualStyleBackColor = false;
+            this.plcorder.Click += new System.EventHandler(this.plcorder_Click);
             // 
             // exitbtn
             // 
@@ -177,7 +178,6 @@
             this.Name = "dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dashboard";
-            this.Load += new System.EventHandler(this.dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

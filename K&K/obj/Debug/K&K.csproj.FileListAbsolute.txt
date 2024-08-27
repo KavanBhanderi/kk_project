@@ -30,3 +30,4 @@ D:\cafe_management\kk_project\K&K\obj\Debug\K&K.csproj.GenerateResource.cache
 D:\cafe_management\kk_project\K&K\obj\Debug\K&K.csproj.CoreCompileInputs.cache
 D:\cafe_management\kk_project\K&K\obj\Debug\K&K.exe
 D:\cafe_management\kk_project\K&K\obj\Debug\K&K.pdb
+D:\cafe_management\kk_project\K&K\obj\Debug\K_K.PlaceOrder.resources
