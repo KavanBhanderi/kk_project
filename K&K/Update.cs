@@ -48,18 +48,18 @@ namespace K_K
         {
             if (txtcmb.Text != "-- Select Category --" && txtitem.Text != string.Empty && txtprice.Text != string.Empty)
             {
-                string sql = "update items set category='" + txtcmb.Text + "',itemname='" + txtitem.Text + "',price='" + txtprice.Text + "' where id=" + id + "";
+                string sql = "update items set category='" + txtcmb.Text + "',price='" + txtprice.Text + "' where itemname='" + txtitem.Text + "'";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, Class1.con);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 MessageBox.Show("Record Update", "Important", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView1.DataSource = dt;
+                loaddata();
                 txtitem.Text = string.Empty;
                 txtcmb.Text = "--Select Category--";
                 txtprice.Text = string.Empty;
-                dataGridView1.DataSource = dt;
-                loaddata();
-               
-               
+
+
             }
             else
             {
