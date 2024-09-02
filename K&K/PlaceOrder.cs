@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -11,6 +12,7 @@ namespace K_K
         public PlaceOrder()
         {
             InitializeComponent();
+            
         }
         public void loaddata()
         {
@@ -27,6 +29,7 @@ namespace K_K
         {
             loaddata();
             search.Text = "Search Item Name";
+
         }
         private void selectcmb_SelectedIndexChanged(object sender, EventArgs e)
         {
