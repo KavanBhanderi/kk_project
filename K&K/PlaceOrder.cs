@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -112,7 +113,13 @@ namespace K_K
             txttotal.Text = (quan*price).ToString();
         }
 
-        protected int n , total=0;
+        int amount;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            amount = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+        }
+
+        protected int n, total = 0;
         private void addtocart_Click(object sender, EventArgs e)
         {
             if (txttotal.Text != "0" && txttotal.Text != "")
@@ -128,10 +135,26 @@ namespace K_K
             }
             else
             {
-                MessageBox.Show("Minimum Quantity need to be  1" ,"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Minimum Quantity need to be  1", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
+        private void btnremove_Click(object sender, EventArgs e)
+        {
+            int rowIndex = dataGridView1.CurrentCell.RowIndex;
+            if (dataGridView1.CurrentCell.RowIndex <= 0)
+            {
+                dataGridView1.Rows.RemoveAt(rowIndex);
+                MessageBox.Show("Deleted Order","Information",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Not available Record","Information",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            total -=  amount;
+            totalrs.Text = "Rs." + total;
+        }
+
     }
 }
+
 

@@ -83,7 +83,7 @@
             this.selectcmb.Font = new System.Drawing.Font("Mongolian Baiti", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectcmb.FormattingEnabled = true;
             this.selectcmb.Location = new System.Drawing.Point(13, 98);
-            this.selectcmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectcmb.Margin = new System.Windows.Forms.Padding(2);
             this.selectcmb.Name = "selectcmb";
             this.selectcmb.Size = new System.Drawing.Size(114, 19);
             this.selectcmb.TabIndex = 2;
@@ -94,7 +94,7 @@
             // search
             // 
             this.search.Location = new System.Drawing.Point(9, 133);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(114, 20);
             this.search.TabIndex = 3;
@@ -108,7 +108,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(9, 171);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(114, 316);
             this.listBox1.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.exit.BackColor = System.Drawing.Color.Red;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.Location = new System.Drawing.Point(535, 7);
-            this.exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exit.Margin = new System.Windows.Forms.Padding(2);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(32, 24);
             this.exit.TabIndex = 5;
@@ -152,7 +152,7 @@
             // txtitem
             // 
             this.txtitem.Location = new System.Drawing.Point(170, 98);
-            this.txtitem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtitem.Margin = new System.Windows.Forms.Padding(2);
             this.txtitem.Name = "txtitem";
             this.txtitem.ReadOnly = true;
             this.txtitem.Size = new System.Drawing.Size(162, 20);
@@ -161,7 +161,7 @@
             // txtprice
             // 
             this.txtprice.Location = new System.Drawing.Point(391, 96);
-            this.txtprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtprice.Margin = new System.Windows.Forms.Padding(2);
             this.txtprice.Name = "txtprice";
             this.txtprice.ReadOnly = true;
             this.txtprice.Size = new System.Drawing.Size(177, 20);
@@ -181,7 +181,7 @@
             // txttotal
             // 
             this.txttotal.Location = new System.Drawing.Point(391, 171);
-            this.txttotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttotal.Margin = new System.Windows.Forms.Padding(2);
             this.txttotal.Name = "txttotal";
             this.txttotal.ReadOnly = true;
             this.txttotal.Size = new System.Drawing.Size(177, 20);
@@ -201,7 +201,7 @@
             // txtquantity
             // 
             this.txtquantity.Location = new System.Drawing.Point(170, 171);
-            this.txtquantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtquantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.Size = new System.Drawing.Size(160, 20);
             this.txtquantity.TabIndex = 13;
@@ -212,7 +212,7 @@
             this.addtocart.BackColor = System.Drawing.Color.CornflowerBlue;
             this.addtocart.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addtocart.Location = new System.Drawing.Point(302, 220);
-            this.addtocart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addtocart.Margin = new System.Windows.Forms.Padding(2);
             this.addtocart.Name = "addtocart";
             this.addtocart.Size = new System.Drawing.Size(133, 24);
             this.addtocart.TabIndex = 14;
@@ -230,12 +230,13 @@
             this.Column3,
             this.Column4});
             this.dataGridView1.Location = new System.Drawing.Point(170, 259);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(398, 188);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -270,19 +271,20 @@
             this.btnremove.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnremove.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnremove.Location = new System.Drawing.Point(170, 462);
-            this.btnremove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnremove.Margin = new System.Windows.Forms.Padding(2);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(103, 24);
             this.btnremove.TabIndex = 16;
             this.btnremove.Text = "Remove";
             this.btnremove.UseVisualStyleBackColor = false;
+            this.btnremove.Click += new System.EventHandler(this.btnremove_Click);
             // 
             // btnprint
             // 
             this.btnprint.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnprint.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Location = new System.Drawing.Point(464, 462);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(103, 24);
             this.btnprint.TabIndex = 17;
@@ -338,7 +340,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PlaceOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlaceOrder";

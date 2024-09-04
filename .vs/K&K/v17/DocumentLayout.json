@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Kavan\\Project\\kk_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|c:\\kavan\\project\\kk_project\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|c:\\kavan\\project\\kk_project\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|C:\\Kavan\\Project\\kk_project\\k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -93,32 +93,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\dashboard.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\dashboard.cs",
-              "ToolTip": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\dashboard.cs [Design]",
-              "RelativeToolTip": "K\u0026K\\dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:19:24.947Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Remove.cs",
               "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\Remove.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Remove.cs",
               "ToolTip": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\Remove.cs",
               "RelativeToolTip": "K\u0026K\\Remove.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwBIAAAAJAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwC8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T10:19:24.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlaceOrder.cs [Design]",
               "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\PlaceOrder.cs",
               "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
@@ -130,20 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlaceOrder.cs",
               "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\PlaceOrder.cs",
               "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
               "ToolTip": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\PlaceOrder.cs",
               "RelativeToolTip": "K\u0026K\\PlaceOrder.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAIwIIAAAB/AAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAIwJAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T02:43:37.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Remove.cs [Design]",
               "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\Remove.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Remove.cs",
@@ -155,16 +143,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Update.cs",
               "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\Update.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Update.cs",
               "ToolTip": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\Update.cs",
               "RelativeToolTip": "K\u0026K\\Update.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAQwCMAAAA5AAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAIwEgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T10:19:24.846Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\dashboard.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\dashboard.cs",
+              "ToolTip": "C:\\Kavan\\Project\\kk_project\\K\u0026K\\dashboard.cs [Design]",
+              "RelativeToolTip": "K\u0026K\\dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:19:24.947Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
