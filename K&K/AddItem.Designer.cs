@@ -47,7 +47,7 @@
             this.label1.Location = new System.Drawing.Point(191, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 22);
+            this.label1.Size = new System.Drawing.Size(114, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Item";
             // 
@@ -59,10 +59,9 @@
             this.Category.Location = new System.Drawing.Point(30, 91);
             this.Category.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Category.Name = "Category";
-            this.Category.Size = new System.Drawing.Size(99, 22);
+            this.Category.Size = new System.Drawing.Size(81, 18);
             this.Category.TabIndex = 1;
             this.Category.Text = "Category :";
-           // this.Category.Click += new System.EventHandler(this.Category_Click);
             // 
             // item_name
             // 
@@ -72,10 +71,9 @@
             this.item_name.Location = new System.Drawing.Point(30, 175);
             this.item_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.item_name.Name = "item_name";
-            this.item_name.Size = new System.Drawing.Size(119, 22);
+            this.item_name.Size = new System.Drawing.Size(99, 18);
             this.item_name.TabIndex = 2;
             this.item_name.Text = "Item Name :";
-//            this.item_name.Click += new System.EventHandler(this.item_name_Click);
             // 
             // Price
             // 
@@ -85,10 +83,9 @@
             this.Price.Location = new System.Drawing.Point(30, 258);
             this.Price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(70, 22);
+            this.Price.Size = new System.Drawing.Size(57, 18);
             this.Price.TabIndex = 3;
             this.Price.Text = "Price :";
-            //this.Price.Click += new System.EventHandler(this.Price_Click);
             // 
             // txtcategory
             // 
@@ -102,17 +99,16 @@
             this.txtcategory.Location = new System.Drawing.Point(33, 124);
             this.txtcategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtcategory.Name = "txtcategory";
-            this.txtcategory.Size = new System.Drawing.Size(464, 30);
+            this.txtcategory.Size = new System.Drawing.Size(464, 26);
             this.txtcategory.TabIndex = 4;
             this.txtcategory.Text = "--Select Category--";
-           // this.txtcategory.SelectedIndexChanged += new System.EventHandler(this.txtcategory_SelectedIndexChanged);
             // 
             // txtItem
             // 
             this.txtItem.Location = new System.Drawing.Point(33, 209);
             this.txtItem.Margin = new System.Windows.Forms.Padding(4);
             this.txtItem.Name = "txtItem";
-            this.txtItem.Size = new System.Drawing.Size(464, 29);
+            this.txtItem.Size = new System.Drawing.Size(464, 25);
             this.txtItem.TabIndex = 5;
             // 
             // txtprice
@@ -120,7 +116,7 @@
             this.txtprice.Location = new System.Drawing.Point(33, 292);
             this.txtprice.Margin = new System.Windows.Forms.Padding(4);
             this.txtprice.Name = "txtprice";
-            this.txtprice.Size = new System.Drawing.Size(464, 29);
+            this.txtprice.Size = new System.Drawing.Size(464, 25);
             this.txtprice.TabIndex = 6;
             // 
             // Add_Item
@@ -150,9 +146,9 @@
             // 
             // AddItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 410);
+            this.ClientSize = new System.Drawing.Size(511, 402);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.Add_Item);
             this.Controls.Add(this.txtprice);

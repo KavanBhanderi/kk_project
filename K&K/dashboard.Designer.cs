@@ -37,7 +37,6 @@
             this.plcorder = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,20 +48,18 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.additm);
             this.panel1.Controls.Add(this.plcorder);
-            this.panel1.Location = new System.Drawing.Point(28, 52);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(21, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 612);
+            this.panel1.Size = new System.Drawing.Size(200, 497);
             this.panel1.TabIndex = 0;
             // 
             // btnlogout
             // 
             this.btnlogout.AutoSize = true;
             this.btnlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogout.Location = new System.Drawing.Point(136, 571);
-            this.btnlogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnlogout.Location = new System.Drawing.Point(102, 464);
             this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(98, 29);
+            this.btnlogout.Size = new System.Drawing.Size(78, 24);
             this.btnlogout.TabIndex = 2;
             this.btnlogout.TabStop = true;
             this.btnlogout.Text = "LogOut";
@@ -73,10 +70,9 @@
             this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(61, 324);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(30, 258);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 58);
+            this.button4.Size = new System.Drawing.Size(170, 47);
             this.button4.TabIndex = 5;
             this.button4.Text = "Remove Items";
             this.button4.UseVisualStyleBackColor = false;
@@ -87,10 +83,9 @@
             this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(61, 236);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(30, 181);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 58);
+            this.button3.Size = new System.Drawing.Size(170, 47);
             this.button3.TabIndex = 4;
             this.button3.Text = "Update Items";
             this.button3.UseVisualStyleBackColor = false;
@@ -101,10 +96,9 @@
             this.additm.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.additm.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.additm.Location = new System.Drawing.Point(61, 144);
-            this.additm.Margin = new System.Windows.Forms.Padding(4);
+            this.additm.Location = new System.Drawing.Point(30, 108);
             this.additm.Name = "additm";
-            this.additm.Size = new System.Drawing.Size(227, 58);
+            this.additm.Size = new System.Drawing.Size(170, 47);
             this.additm.TabIndex = 3;
             this.additm.Text = "Add Items";
             this.additm.UseVisualStyleBackColor = false;
@@ -115,10 +109,9 @@
             this.plcorder.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.plcorder.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plcorder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.plcorder.Location = new System.Drawing.Point(61, 53);
-            this.plcorder.Margin = new System.Windows.Forms.Padding(4);
+            this.plcorder.Location = new System.Drawing.Point(30, 35);
             this.plcorder.Name = "plcorder";
-            this.plcorder.Size = new System.Drawing.Size(227, 58);
+            this.plcorder.Size = new System.Drawing.Size(170, 47);
             this.plcorder.TabIndex = 2;
             this.plcorder.Text = "Place Order";
             this.plcorder.UseVisualStyleBackColor = false;
@@ -129,10 +122,9 @@
             this.exitbtn.BackColor = System.Drawing.Color.Red;
             this.exitbtn.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitbtn.ForeColor = System.Drawing.Color.Black;
-            this.exitbtn.Location = new System.Drawing.Point(1095, 11);
-            this.exitbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.exitbtn.Location = new System.Drawing.Point(821, 9);
             this.exitbtn.Name = "exitbtn";
-            this.exitbtn.Size = new System.Drawing.Size(45, 33);
+            this.exitbtn.Size = new System.Drawing.Size(34, 27);
             this.exitbtn.TabIndex = 6;
             this.exitbtn.Text = "X";
             this.exitbtn.UseVisualStyleBackColor = false;
@@ -145,43 +137,28 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(291, 52);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(219, 42);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(849, 611);
+            this.panel2.Size = new System.Drawing.Size(636, 497);
             this.panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 32);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Dashboard";
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.ClientSize = new System.Drawing.Size(1162, 686);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(872, 557);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -195,6 +172,5 @@
         private System.Windows.Forms.Button additm;
         private System.Windows.Forms.Button exitbtn;
         private System.Windows.Forms.LinkLabel btnlogout;
-        private System.Windows.Forms.Label label1;
     }
 }

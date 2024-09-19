@@ -17,6 +17,7 @@ namespace K_K
         public Form1()
         {
             InitializeComponent();
+            
         }
         private void btnlogin_Click(object sender, EventArgs e)
         {
@@ -42,6 +43,16 @@ namespace K_K
             {
                 MessageBox.Show("Username or Password Empty","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
