@@ -55,6 +55,32 @@ namespace K_K
             }
         }
 
-        
+        private void plcorder_Click(object sender, EventArgs e)
+        {
+            PlaceOrder placeOrder   = new PlaceOrder();
+            this.Close();   
+            placeOrder.Show();
+        }
+
+        private void additm_Click(object sender, EventArgs e)
+        {
+            AddItem additm = new AddItem();
+            this.Close();
+            additm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            this.Close();
+            update.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Remove remove = new Remove();
+            this.Close();
+            remove.Show();
+        }
     }
 }

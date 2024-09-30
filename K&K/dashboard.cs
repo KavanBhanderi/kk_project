@@ -20,9 +20,10 @@ namespace K_K
         }
         private void button1_Click(object sender, EventArgs e)
         { 
-               Form1 f1 = new Form1();  
+               /*Form1 f1 = new Form1();  
                this.Close();
-               f1.Show();
+               f1.Show();*/
+               Application.Exit();  
         }
         private void btnlogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -33,8 +34,9 @@ namespace K_K
         private void additm_Click(object sender, EventArgs e)
         {
             AddItem addItem = new AddItem();
-            this.Hide();
             addItem.Show();
+            this.Hide();
+           
          
           
         }

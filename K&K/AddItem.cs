@@ -40,11 +40,69 @@ namespace K_K
         }
         private void exit_Click(object sender, EventArgs e)
         {
-            dashboard db = new dashboard();
-            AddItem addItem = new AddItem(); 
+            dashboard db = new dashboard(); 
             this.Close();
             db.Show();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        /*private void plcorder_Click(object sender, EventArgs e)
+        {
+            PlaceOrder placeOrder = new PlaceOrder();
+            this.Close();
+            placeOrder.Show();
+        }
+
+        private void additm_Click(object sender, EventArgs e)
+        {
+            AddItem addItem = new AddItem();    
+            this.Close();
+            addItem.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            this.Close();
+            update.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Remove remove = new Remove();
+            this.Close();
+            remove.Show();
+        }*/
+
+        private void plcorder_Click_1(object sender, EventArgs e)
+        {
+            PlaceOrder placeOrder = new PlaceOrder();
+            this.Close();
+            placeOrder.Show();
+        }
+
+        private void additm_Click(object sender, EventArgs e)
+        {
+            AddItem additm = new AddItem();
+            additm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            this.Close();
+            update.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Remove remove = new Remove();
+            this.Close();
+            remove.Show();
+        }
     }
 }

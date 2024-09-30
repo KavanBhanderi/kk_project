@@ -24,7 +24,7 @@ namespace K_K
         }
         public void loaddata()
         {
-            string sql = "select category from items";
+            string sql = "select DISTINCT category from items";
             SqlDataAdapter adapter = new SqlDataAdapter(sql, Class1.con);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
@@ -196,6 +196,39 @@ namespace K_K
                 // Handle any unexpected exceptions
                 MessageBox.Show("An error occurred: " + ex.Message, "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void plcorder_Click(object sender, EventArgs e)
+        {
+            PlaceOrder placeOrder = new PlaceOrder();
+            this.Close();
+            placeOrder.Show();
+        }
+
+        private void additm_Click(object sender, EventArgs e)
+        {
+            AddItem additm = new AddItem(); 
+            this.Close();
+            additm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            this.Close();
+            update.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Remove remove = new Remove();
+            this.Close();
+            remove.Show();
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
