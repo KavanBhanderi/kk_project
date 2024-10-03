@@ -150,13 +150,27 @@ namespace K_K
 
         private void btnremove_Click(object sender, EventArgs e)
         {
-            int rowIndex = dataGridView1.CurrentCell.RowIndex;
+            
             if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.RowIndex >= 0)
             {
-                dataGridView1.Rows.RemoveAt(rowIndex);
-                MessageBox.Show("Deleted Order", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                total -= amount;
-                totalrs.Text = "Rs." + total;
+                int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                if (!dataGridView1.Rows[rowIndex].IsNewRow)
+                {
+                    // Commit any pending changes in the DataGridView
+                    if (dataGridView1.IsCurrentRowDirty)
+                    {
+                        dataGridView1.EndEdit();
+                    }
+                    dataGridView1.Rows.RemoveAt(rowIndex);
+                    MessageBox.Show("Deleted Order", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    total -= amount;
+                    totalrs.Text = "Rs." + total;
+                }
+                else
+                {
+                    // The row is a new uncommitted row
+                    MessageBox.Show("Cannot delete a new row that hasn't been committed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
@@ -231,6 +245,21 @@ namespace K_K
             remove.Show();
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -243,9 +272,13 @@ namespace K_K
             g.DrawString("K & K Cafe Management", new Font("Arial", 14, FontStyle.Bold), brush, x, y);
             y += 40;
 
+            g.DrawString("Customer name = " + customertxt.Text, new Font("Arial", 14, FontStyle.Bold), brush, x, y);
+            y += 40;
+
             g.DrawString("Date: " + DateTime.Now.ToString("dd/MM/yyyy"), font, brush, x, y);
             y += 40;
 
+            g.DrawString("Customer Name", new Font("Roman", 12, FontStyle.Bold), brush, x, y);
             g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x, y);
             g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+200, y);
             g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 300, y);
@@ -254,7 +287,7 @@ namespace K_K
             g.DrawLine(Pens.Black, x, y, e.MarginBounds.Right, y);
             y += 10;
 
-
+    
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.IsNewRow) continue;

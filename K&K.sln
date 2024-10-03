@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K&K", "K&K\K&K.csproj", "{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "K&K_Cafe", "K&K_Cafe\K&K_Cafe.vdproj", "{408DB444-8E9F-472B-9EB1-7499B4977727}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "K&K Cafe", "K&K Cafe\K&K Cafe.vdproj", "{41A75DCB-C541-42E2-8EA8-1C373B6D8780}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{408DB444-8E9F-472B-9EB1-7499B4977727}.Debug|Any CPU.ActiveCfg = Debug
-		{408DB444-8E9F-472B-9EB1-7499B4977727}.Release|Any CPU.ActiveCfg = Release
+		{41A75DCB-C541-42E2-8EA8-1C373B6D8780}.Debug|Any CPU.ActiveCfg = Debug
+		{41A75DCB-C541-42E2-8EA8-1C373B6D8780}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

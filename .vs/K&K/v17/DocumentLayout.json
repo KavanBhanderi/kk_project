@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\cafe_management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|d:\\cafe_management\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|d:\\cafe_management\\k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|solutionrelative:k\u0026k\\remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21AD78E2-F457-45A6-92E4-B36AAF33D4B7}|K\u0026K\\K\u0026K.csproj|D:\\cafe_management\\k\u0026k\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Form1.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Form1.cs",
@@ -66,7 +70,8 @@
               "RelativeToolTip": "K\u0026K\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T10:19:24.948Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -78,44 +83,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dashboard.cs",
-              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\dashboard.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\dashboard.cs",
-              "ToolTip": "D:\\cafe_management\\K\u0026K\\dashboard.cs",
-              "RelativeToolTip": "K\u0026K\\dashboard.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAmwCQAAAAbAAAA",
+              "DocumentIndex": 1,
+              "Title": "Update.cs [Design]",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Update.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\Update.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\Update.cs [Design]",
+              "RelativeToolTip": "K\u0026K\\Update.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T10:07:10.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T13:19:03.734Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddItem.cs",
-              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\AddItem.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\AddItem.cs",
-              "ToolTip": "D:\\cafe_management\\K\u0026K\\AddItem.cs",
-              "RelativeToolTip": "K\u0026K\\AddItem.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAA3wGgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T10:01:12.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlaceOrder.cs",
-              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
-              "ToolTip": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
-              "RelativeToolTip": "K\u0026K\\PlaceOrder.cs",
-              "ViewState": "AQIAANYAAAAAAAAAAAAYwOYAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T09:59:01.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Remove.cs",
               "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Remove.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Remove.cs",
@@ -123,11 +103,12 @@
               "RelativeToolTip": "K\u0026K\\Remove.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAA1wCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T09:57:35.406Z"
+              "WhenOpened": "2024-09-30T09:57:35.406Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Update.cs",
               "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Update.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Update.cs",
@@ -139,25 +120,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "dashboard.cs [Design]",
               "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\dashboard.cs",
               "RelativeDocumentMoniker": "K\u0026K\\dashboard.cs",
               "ToolTip": "D:\\cafe_management\\K\u0026K\\dashboard.cs [Design]",
               "RelativeToolTip": "K\u0026K\\dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:20:02.793Z"
+              "WhenOpened": "2024-09-30T08:20:02.793Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlaceOrder.cs [Design]",
-              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
-              "ToolTip": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs [Design]",
-              "RelativeToolTip": "K\u0026K\\PlaceOrder.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Remove.cs [Design]",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Remove.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\Remove.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\Remove.cs [Design]",
+              "RelativeToolTip": "K\u0026K\\Remove.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T02:33:25.299Z"
+              "WhenOpened": "2024-08-10T10:19:24.929Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -168,11 +151,63 @@
               "ToolTip": "D:\\cafe_management\\K\u0026K\\AddItem.cs [Design]",
               "RelativeToolTip": "K\u0026K\\AddItem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:19:24.945Z"
+              "WhenOpened": "2024-08-10T10:19:24.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlaceOrder.cs",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
+              "RelativeToolTip": "K\u0026K\\PlaceOrder.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAYwHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:59:01.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlaceOrder.cs [Design]",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\PlaceOrder.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\PlaceOrder.cs [Design]",
+              "RelativeToolTip": "K\u0026K\\PlaceOrder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T02:33:25.299Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddItem.cs",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\AddItem.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\AddItem.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\AddItem.cs",
+              "RelativeToolTip": "K\u0026K\\AddItem.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAA3wGgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T10:01:12.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "dashboard.cs",
+              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\dashboard.cs",
+              "RelativeDocumentMoniker": "K\u0026K\\dashboard.cs",
+              "ToolTip": "D:\\cafe_management\\K\u0026K\\dashboard.cs",
+              "RelativeToolTip": "K\u0026K\\dashboard.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwBcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T10:07:10.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Program.cs",
               "RelativeDocumentMoniker": "K\u0026K\\Program.cs",
@@ -180,18 +215,8 @@
               "RelativeToolTip": "K\u0026K\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T07:50:07.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Remove.cs [Design]",
-              "DocumentMoniker": "D:\\cafe_management\\K\u0026K\\Remove.cs",
-              "RelativeDocumentMoniker": "K\u0026K\\Remove.cs",
-              "ToolTip": "D:\\cafe_management\\K\u0026K\\Remove.cs [Design]",
-              "RelativeToolTip": "K\u0026K\\Remove.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:19:24.929Z"
+              "WhenOpened": "2024-09-30T07:50:07.86Z",
+              "EditorCaption": ""
             }
           ]
         }

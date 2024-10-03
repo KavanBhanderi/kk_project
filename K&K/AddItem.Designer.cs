@@ -239,6 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1163, 686);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Add_Item);
@@ -259,7 +260,6 @@
             this.Name = "AddItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddItem";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
