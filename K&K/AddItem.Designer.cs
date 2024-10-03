@@ -52,10 +52,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(639, 14);
+            this.label1.Location = new System.Drawing.Point(494, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 22);
+            this.label1.Size = new System.Drawing.Size(114, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Item";
             // 
@@ -65,10 +65,10 @@
             this.Category.AutoSize = true;
             this.Category.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Category.ForeColor = System.Drawing.Color.Black;
-            this.Category.Location = new System.Drawing.Point(501, 145);
+            this.Category.Location = new System.Drawing.Point(356, 145);
             this.Category.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Category.Name = "Category";
-            this.Category.Size = new System.Drawing.Size(99, 22);
+            this.Category.Size = new System.Drawing.Size(81, 18);
             this.Category.TabIndex = 1;
             this.Category.Text = "Category :";
             // 
@@ -78,10 +78,10 @@
             this.item_name.AutoSize = true;
             this.item_name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.item_name.ForeColor = System.Drawing.Color.Black;
-            this.item_name.Location = new System.Drawing.Point(500, 260);
+            this.item_name.Location = new System.Drawing.Point(355, 260);
             this.item_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.item_name.Name = "item_name";
-            this.item_name.Size = new System.Drawing.Size(119, 22);
+            this.item_name.Size = new System.Drawing.Size(99, 18);
             this.item_name.TabIndex = 2;
             this.item_name.Text = "Item Name :";
             // 
@@ -91,10 +91,10 @@
             this.Price.AutoSize = true;
             this.Price.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Price.ForeColor = System.Drawing.Color.Black;
-            this.Price.Location = new System.Drawing.Point(501, 380);
+            this.Price.Location = new System.Drawing.Point(356, 380);
             this.Price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(70, 22);
+            this.Price.Size = new System.Drawing.Size(57, 18);
             this.Price.TabIndex = 3;
             this.Price.Text = "Price :";
             // 
@@ -108,29 +108,29 @@
             "South Indian",
             "Thali",
             "Indian"});
-            this.txtcategory.Location = new System.Drawing.Point(504, 178);
+            this.txtcategory.Location = new System.Drawing.Point(359, 178);
             this.txtcategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtcategory.Name = "txtcategory";
-            this.txtcategory.Size = new System.Drawing.Size(464, 30);
+            this.txtcategory.Size = new System.Drawing.Size(464, 26);
             this.txtcategory.TabIndex = 4;
             this.txtcategory.Text = "--Select Category--";
             // 
             // txtItem
             // 
             this.txtItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtItem.Location = new System.Drawing.Point(503, 294);
+            this.txtItem.Location = new System.Drawing.Point(358, 294);
             this.txtItem.Margin = new System.Windows.Forms.Padding(4);
             this.txtItem.Name = "txtItem";
-            this.txtItem.Size = new System.Drawing.Size(464, 29);
+            this.txtItem.Size = new System.Drawing.Size(464, 25);
             this.txtItem.TabIndex = 5;
             // 
             // txtprice
             // 
             this.txtprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtprice.Location = new System.Drawing.Point(504, 414);
+            this.txtprice.Location = new System.Drawing.Point(359, 414);
             this.txtprice.Margin = new System.Windows.Forms.Padding(4);
             this.txtprice.Name = "txtprice";
-            this.txtprice.Size = new System.Drawing.Size(464, 29);
+            this.txtprice.Size = new System.Drawing.Size(464, 25);
             this.txtprice.TabIndex = 6;
             // 
             // Add_Item
@@ -138,7 +138,7 @@
             this.Add_Item.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Add_Item.BackColor = System.Drawing.Color.LimeGreen;
             this.Add_Item.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_Item.Location = new System.Drawing.Point(653, 514);
+            this.Add_Item.Location = new System.Drawing.Point(508, 514);
             this.Add_Item.Margin = new System.Windows.Forms.Padding(4);
             this.Add_Item.Name = "Add_Item";
             this.Add_Item.Size = new System.Drawing.Size(124, 32);
@@ -172,7 +172,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 683);
+            this.panel1.Size = new System.Drawing.Size(200, 556);
             this.panel1.TabIndex = 9;
             // 
             // button4
@@ -181,10 +181,10 @@
             this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(40, 525);
+            this.button4.Location = new System.Drawing.Point(30, 425);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 58);
+            this.button4.Size = new System.Drawing.Size(170, 47);
             this.button4.TabIndex = 5;
             this.button4.Text = "Remove Items";
             this.button4.UseVisualStyleBackColor = false;
@@ -196,10 +196,10 @@
             this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(40, 378);
+            this.button3.Location = new System.Drawing.Point(30, 312);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 58);
+            this.button3.Size = new System.Drawing.Size(170, 47);
             this.button3.TabIndex = 4;
             this.button3.Text = "Update Items";
             this.button3.UseVisualStyleBackColor = false;
@@ -211,10 +211,10 @@
             this.additm.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.additm.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.additm.Location = new System.Drawing.Point(40, 240);
+            this.additm.Location = new System.Drawing.Point(30, 203);
             this.additm.Margin = new System.Windows.Forms.Padding(4);
             this.additm.Name = "additm";
-            this.additm.Size = new System.Drawing.Size(227, 58);
+            this.additm.Size = new System.Drawing.Size(170, 47);
             this.additm.TabIndex = 3;
             this.additm.Text = "Add Items";
             this.additm.UseVisualStyleBackColor = false;
@@ -226,10 +226,10 @@
             this.plcorder.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.plcorder.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plcorder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.plcorder.Location = new System.Drawing.Point(40, 107);
+            this.plcorder.Location = new System.Drawing.Point(30, 102);
             this.plcorder.Margin = new System.Windows.Forms.Padding(4);
             this.plcorder.Name = "plcorder";
-            this.plcorder.Size = new System.Drawing.Size(227, 58);
+            this.plcorder.Size = new System.Drawing.Size(170, 47);
             this.plcorder.TabIndex = 2;
             this.plcorder.Text = "Place Order";
             this.plcorder.UseVisualStyleBackColor = false;
@@ -237,10 +237,10 @@
             // 
             // AddItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1163, 686);
+            this.ClientSize = new System.Drawing.Size(872, 557);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Add_Item);
             this.Controls.Add(this.txtprice);
@@ -260,6 +260,7 @@
             this.Name = "AddItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddItem";
+            this.Load += new System.EventHandler(this.AddItem_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

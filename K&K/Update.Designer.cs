@@ -57,9 +57,9 @@
             this.Update_Item.AutoSize = true;
             this.Update_Item.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Update_Item.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update_Item.Location = new System.Drawing.Point(637, 9);
+            this.Update_Item.Location = new System.Drawing.Point(492, 9);
             this.Update_Item.Name = "Update_Item";
-            this.Update_Item.Size = new System.Drawing.Size(128, 25);
+            this.Update_Item.Size = new System.Drawing.Size(109, 20);
             this.Update_Item.TabIndex = 0;
             this.Update_Item.Text = "Update Item";
             // 
@@ -68,18 +68,18 @@
             this.txtitemname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtitemname.AutoSize = true;
             this.txtitemname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtitemname.Location = new System.Drawing.Point(403, 78);
+            this.txtitemname.Location = new System.Drawing.Point(258, 78);
             this.txtitemname.Name = "txtitemname";
-            this.txtitemname.Size = new System.Drawing.Size(131, 25);
+            this.txtitemname.Size = new System.Drawing.Size(109, 20);
             this.txtitemname.TabIndex = 1;
             this.txtitemname.Text = "Item_name :";
             // 
             // txtsearchitem
             // 
             this.txtsearchitem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtsearchitem.Location = new System.Drawing.Point(408, 122);
+            this.txtsearchitem.Location = new System.Drawing.Point(263, 122);
             this.txtsearchitem.Name = "txtsearchitem";
-            this.txtsearchitem.Size = new System.Drawing.Size(278, 22);
+            this.txtsearchitem.Size = new System.Drawing.Size(278, 20);
             this.txtsearchitem.TabIndex = 2;
             this.txtsearchitem.TextChanged += new System.EventHandler(this.txtsearchitem_TextChanged);
             // 
@@ -98,10 +98,10 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(408, 173);
+            this.dataGridView1.Location = new System.Drawing.Point(263, 173);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(702, 243);
+            this.dataGridView1.Size = new System.Drawing.Size(588, 211);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -110,9 +110,9 @@
             this.category.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.category.AutoSize = true;
             this.category.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category.Location = new System.Drawing.Point(403, 443);
+            this.category.Location = new System.Drawing.Point(259, 399);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(113, 25);
+            this.category.Size = new System.Drawing.Size(91, 20);
             this.category.TabIndex = 4;
             this.category.Text = "Category :";
             // 
@@ -126,9 +126,9 @@
             "South Indian",
             "Thali",
             "Indian"});
-            this.txtcmb.Location = new System.Drawing.Point(408, 501);
+            this.txtcmb.Location = new System.Drawing.Point(261, 431);
             this.txtcmb.Name = "txtcmb";
-            this.txtcmb.Size = new System.Drawing.Size(340, 24);
+            this.txtcmb.Size = new System.Drawing.Size(233, 21);
             this.txtcmb.TabIndex = 5;
             this.txtcmb.Text = "-- Select Category --";
             this.txtcmb.SelectedIndexChanged += new System.EventHandler(this.txtcmb_SelectedIndexChanged);
@@ -138,18 +138,18 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(403, 551);
+            this.label1.Location = new System.Drawing.Point(259, 476);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 25);
+            this.label1.Size = new System.Drawing.Size(114, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = " Item_name :";
             // 
             // txtitem
             // 
             this.txtitem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtitem.Location = new System.Drawing.Point(408, 606);
+            this.txtitem.Location = new System.Drawing.Point(261, 513);
             this.txtitem.Name = "txtitem";
-            this.txtitem.Size = new System.Drawing.Size(340, 22);
+            this.txtitem.Size = new System.Drawing.Size(233, 20);
             this.txtitem.TabIndex = 7;
             // 
             // Price
@@ -157,18 +157,18 @@
             this.Price.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Price.AutoSize = true;
             this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.Location = new System.Drawing.Point(785, 443);
+            this.Price.Location = new System.Drawing.Point(614, 399);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(74, 25);
+            this.Price.Size = new System.Drawing.Size(59, 20);
             this.Price.TabIndex = 8;
             this.Price.Text = "Price :";
             // 
             // txtprice
             // 
             this.txtprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtprice.Location = new System.Drawing.Point(770, 501);
+            this.txtprice.Location = new System.Drawing.Point(618, 431);
             this.txtprice.Name = "txtprice";
-            this.txtprice.Size = new System.Drawing.Size(340, 22);
+            this.txtprice.Size = new System.Drawing.Size(233, 20);
             this.txtprice.TabIndex = 9;
             // 
             // btnupdate
@@ -176,9 +176,9 @@
             this.btnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(770, 602);
+            this.btnupdate.Location = new System.Drawing.Point(618, 505);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(340, 28);
+            this.btnupdate.Size = new System.Drawing.Size(233, 28);
             this.btnupdate.TabIndex = 10;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
@@ -209,7 +209,7 @@
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 684);
+            this.panel1.Size = new System.Drawing.Size(200, 556);
             this.panel1.TabIndex = 12;
             // 
             // button4
@@ -218,10 +218,10 @@
             this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(40, 526);
+            this.button4.Location = new System.Drawing.Point(30, 430);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 58);
+            this.button4.Size = new System.Drawing.Size(170, 47);
             this.button4.TabIndex = 5;
             this.button4.Text = "Remove Items";
             this.button4.UseVisualStyleBackColor = false;
@@ -233,10 +233,10 @@
             this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(40, 381);
+            this.button3.Location = new System.Drawing.Point(30, 315);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 58);
+            this.button3.Size = new System.Drawing.Size(170, 47);
             this.button3.TabIndex = 4;
             this.button3.Text = "Update Items";
             this.button3.UseVisualStyleBackColor = false;
@@ -248,10 +248,10 @@
             this.additm.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.additm.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.additm.Location = new System.Drawing.Point(40, 243);
+            this.additm.Location = new System.Drawing.Point(30, 207);
             this.additm.Margin = new System.Windows.Forms.Padding(4);
             this.additm.Name = "additm";
-            this.additm.Size = new System.Drawing.Size(227, 58);
+            this.additm.Size = new System.Drawing.Size(170, 47);
             this.additm.TabIndex = 3;
             this.additm.Text = "Add Items";
             this.additm.UseVisualStyleBackColor = false;
@@ -263,10 +263,10 @@
             this.plcorder.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.plcorder.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plcorder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.plcorder.Location = new System.Drawing.Point(40, 101);
+            this.plcorder.Location = new System.Drawing.Point(30, 94);
             this.plcorder.Margin = new System.Windows.Forms.Padding(4);
             this.plcorder.Name = "plcorder";
-            this.plcorder.Size = new System.Drawing.Size(227, 58);
+            this.plcorder.Size = new System.Drawing.Size(170, 47);
             this.plcorder.TabIndex = 2;
             this.plcorder.Text = "Place Order";
             this.plcorder.UseVisualStyleBackColor = false;
@@ -276,7 +276,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1163, 686);
+            this.ClientSize = new System.Drawing.Size(872, 557);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtprice);

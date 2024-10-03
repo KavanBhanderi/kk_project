@@ -104,5 +104,10 @@ namespace K_K
             this.Close();
             remove.Show();
         }
+
+        private void AddItem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

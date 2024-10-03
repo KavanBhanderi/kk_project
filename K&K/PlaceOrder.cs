@@ -22,6 +22,19 @@ namespace K_K
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
 
         }
+
+        public void cleardata()
+        {
+            selectcmb.Text = "--Select Categroy--";
+            listBox1.Items.Clear();
+            txtitem.Text = string.Empty;    
+            txtprice.Text = string.Empty;
+            txtquantity.Text = string.Empty;
+            txttotal.Text = string.Empty;
+            dataGridView1.Rows.Clear();
+            totalrs.Text = "Rs. 00";
+            customertxt.Text = string.Empty;    
+        }
         public void loaddata()
         {
             string sql = "select DISTINCT category from items";
@@ -183,26 +196,28 @@ namespace K_K
         {
             try
             {
-                if (dataGridView1.Rows.Count > 0)
+                if (customertxt.Text != string.Empty)
                 {
-                    // Check if PrintDocument is not null
-                    if (printDocument1 != null)
+
+                    if (dataGridView1.Rows.Count > 0)
                     {
-                        // Assign the PrintDocument to the PrintPreviewDialog
+                        if (dataGridView1.Rows.Count == 1 && dataGridView1.Rows[0].IsNewRow)
+                        {
+                            MessageBox.Show("No data available to print. Please enter data first.", "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return; // Exit early
+                        }
                         printPreviewDialog1.Document = printDocument1;
-                        // Show the PrintPreviewDialog
                         printPreviewDialog1.ShowDialog();
+                        cleardata(); // Clear or reset your DataGridView as needed
                     }
                     else
                     {
-                        // Show an error message if PrintDocument is null
-                        MessageBox.Show("PrintDocument is not available.", "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("No data available to print.", "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    // Show an error message if there is no data
-                    MessageBox.Show("No data available to print.", "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Customer name: Not provided","Print Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -210,6 +225,7 @@ namespace K_K
                 // Handle any unexpected exceptions
                 MessageBox.Show("An error occurred: " + ex.Message, "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -260,6 +276,11 @@ namespace K_K
 
         }
 
+        private void totalrs_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -272,17 +293,19 @@ namespace K_K
             g.DrawString("K & K Cafe Management", new Font("Arial", 14, FontStyle.Bold), brush, x, y);
             y += 40;
 
-            g.DrawString("Customer name = " + customertxt.Text, new Font("Arial", 14, FontStyle.Bold), brush, x, y);
+          
+            g.DrawString("Customer name : " + customertxt.Text, new Font("Arial", 14, FontStyle.Bold), brush, x, y);
             y += 40;
 
+            
             g.DrawString("Date: " + DateTime.Now.ToString("dd/MM/yyyy"), font, brush, x, y);
             y += 40;
 
             g.DrawString("Customer Name", new Font("Roman", 12, FontStyle.Bold), brush, x, y);
-            g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x, y);
-            g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+200, y);
-            g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 300, y);
-            g.DrawString("Price",  new Font("Roman", 12, FontStyle.Bold), brush, x + 400, y);
+            g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x+200, y);
+            g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+300, y);
+            g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 400, y);
+            g.DrawString("Price",  new Font("Roman", 12, FontStyle.Bold), brush, x + 500, y);
             y += 20;
             g.DrawLine(Pens.Black, x, y, e.MarginBounds.Right, y);
             y += 10;
