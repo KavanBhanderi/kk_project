@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Reflection;
 using System.Windows.Forms;
@@ -110,7 +111,7 @@ namespace K_K
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtquantity.Text = "0 ";
+            txtquantity.Text = "0";
             txttotal.Clear();
 
             string text = listBox1.GetItemText(listBox1.SelectedItem);
@@ -120,8 +121,15 @@ namespace K_K
             SqlDataAdapter da = new SqlDataAdapter(query, Class1.con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-
-            txtprice.Text = dt.Rows[0][3].ToString();
+            if (dt.Rows.Count > 0)
+            {
+                txtprice.Text = dt.Rows[0][3].ToString();
+            }
+            else
+            {
+                txtprice.Clear();
+                MessageBox.Show("Item not found or no data available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
 
         }
@@ -284,13 +292,45 @@ namespace K_K
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
+            Image backgroundImage = Image.FromFile(@"D:\cafe_management\Cafe_Logo.jpg");
+
+            // Define the watermark transparency
+            float transparency = 0.1f;  // 10% opacity for watermark effect
+            ImageAttributes imageAttributes = new ImageAttributes();
+            ColorMatrix colorMatrix = new ColorMatrix
+            {
+                Matrix33 = transparency  // Apply the transparency to the alpha channel
+            };
+            imageAttributes.SetColorMatrix(colorMatrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+
+            // Draw the background image scaled to the page size
+            Rectangle destRect = e.MarginBounds; // Set to fit within margins
+            g.DrawImage(
+                backgroundImage,
+                destRect,
+                0, 0,
+                backgroundImage.Width,
+                backgroundImage.Height,
+                GraphicsUnit.Pixel,
+                imageAttributes
+            );
+
             Font font = new Font("Arial", 12);
             Brush brush = Brushes.Black;
 
             float x = e.MarginBounds.Left;
             float y = e.MarginBounds.Top;
 
-            g.DrawString("K & K Cafe Management", new Font("Arial", 14, FontStyle.Bold), brush, x, y);
+            string titleText = "K & K Cafe";
+            SizeF titleSize = g.MeasureString(titleText,font);
+
+            // Calculate the center position (horizontally)
+            float z = (e.MarginBounds.Width - titleSize.Width) / 2 + e.MarginBounds.Left;
+            float h = e.MarginBounds.Top;
+
+            // Draw the text centered on the page
+            g.DrawString(titleText,new Font("Roman",12,FontStyle.Bold), brush, z,h);
+      
             y += 40;
 
           
@@ -301,11 +341,11 @@ namespace K_K
             g.DrawString("Date: " + DateTime.Now.ToString("dd/MM/yyyy"), font, brush, x, y);
             y += 40;
 
-            g.DrawString("Customer Name", new Font("Roman", 12, FontStyle.Bold), brush, x, y);
-            g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x+200, y);
-            g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+300, y);
-            g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 400, y);
-            g.DrawString("Price",  new Font("Roman", 12, FontStyle.Bold), brush, x + 500, y);
+            //g.DrawString("Customer Name", new Font("Roman", 12, FontStyle.Bold), brush, x, y);
+            g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x, y);
+            g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+200, y);
+            g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 300, y);
+            g.DrawString("Price",  new Font("Roman", 12, FontStyle.Bold), brush, x + 400, y);
             y += 20;
             g.DrawLine(Pens.Black, x, y, e.MarginBounds.Right, y);
             y += 10;

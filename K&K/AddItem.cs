@@ -23,14 +23,25 @@ namespace K_K
         {
             if (txtcategory.Text != "--Select Category--" && txtItem.Text != string.Empty && txtprice.Text != string.Empty)
             {
-                string sql = "insert into items values('" + txtcategory.Text + "','" + txtItem.Text + "','" + txtprice.Text + "')";
-                SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                MessageBox.Show("Record Inserted Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtItem.Text = string.Empty;
-                txtcategory.Text = "--Select Category--";
-                txtprice.Text = string.Empty;
+                string checkSql = "SELECT * FROM items WHERE itemname = '"+txtItem.Text+"'";
+                SqlDataAdapter adapter = new SqlDataAdapter(checkSql,Class1.con);
+                DataTable dt1 = new DataTable();
+                adapter.Fill(dt1);
+                if (dt1.Rows.Count == 0)
+                {
+                    string sql = "insert into items values('" + txtcategory.Text + "','" + txtItem.Text + "','" + txtprice.Text + "')";
+                    SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    MessageBox.Show("Record Inserted Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtItem.Text = string.Empty;
+                    txtcategory.Text = "--Select Category--";
+                    txtprice.Text = string.Empty;
+                }
+                else
+                {
+                    MessageBox.Show("Item already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
