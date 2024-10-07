@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace K_K
@@ -27,9 +28,15 @@ namespace K_K
                 SqlDataAdapter adapter = new SqlDataAdapter(checkSql,Class1.con);
                 DataTable dt1 = new DataTable();
                 adapter.Fill(dt1);
+                if (txtcategory.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please select a valid category from the list.", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string selectedCategory = txtcategory.SelectedItem.ToString();
                 if (dt1.Rows.Count == 0)
                 {
-                    string sql = "insert into items values('" + txtcategory.Text + "','" + txtItem.Text + "','" + txtprice.Text + "')";
+                    string sql = "insert into items values('" + selectedCategory + "','" + txtItem.Text + "','" + txtprice.Text + "')";
                     SqlDataAdapter da = new SqlDataAdapter(sql, Class1.con);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
@@ -40,7 +47,7 @@ namespace K_K
                 }
                 else
                 {
-                    MessageBox.Show("Item already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Item Already Exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -56,38 +63,8 @@ namespace K_K
             db.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        /*private void plcorder_Click(object sender, EventArgs e)
-        {
-            PlaceOrder placeOrder = new PlaceOrder();
-            this.Close();
-            placeOrder.Show();
-        }
-
-        private void additm_Click(object sender, EventArgs e)
-        {
-            AddItem addItem = new AddItem();    
-            this.Close();
-            addItem.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Update update = new Update();
-            this.Close();
-            update.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Remove remove = new Remove();
-            this.Close();
-            remove.Show();
-        }*/
+       
+       
 
         private void plcorder_Click_1(object sender, EventArgs e)
         {
@@ -119,6 +96,36 @@ namespace K_K
         private void AddItem_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtItem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                txtItem.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Character", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtItem.ForeColor = Color.Black;
+            }
+        }
+
+      
+
+        private void txtprice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                txtprice.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Numeric","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtprice.ForeColor = Color.Black;
+            }
         }
     }
 }

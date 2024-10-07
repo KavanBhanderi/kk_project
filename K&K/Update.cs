@@ -46,6 +46,12 @@ namespace K_K
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
+            if (txtcmb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a valid category from the list.", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string selectedCategory = txtcmb.SelectedItem.ToString();
             if (txtcmb.Text != "-- Select Category --" && txtitem.Text != string.Empty && txtprice.Text != string.Empty)
             {
                 string sql = "update items set category='" + txtcmb.Text + "',price='" + txtprice.Text + "' where itemname='" + txtitem.Text + "'";
@@ -112,6 +118,49 @@ namespace K_K
             Remove remove = new Remove();   
             this.Close();
             remove.Show();
+        }
+
+        private void txtsearchitem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                txtsearchitem.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Character", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtsearchitem.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtitem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                txtitem.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Character", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtitem.ForeColor = Color.Black;
+            }
+        }
+
+       
+        private void txtprice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                txtprice.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Numeric", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtprice.ForeColor = Color.Black;
+            }
         }
     }
 }

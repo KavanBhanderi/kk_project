@@ -82,6 +82,7 @@
             this.txtsearchitem.Size = new System.Drawing.Size(278, 20);
             this.txtsearchitem.TabIndex = 2;
             this.txtsearchitem.TextChanged += new System.EventHandler(this.txtsearchitem_TextChanged);
+            this.txtsearchitem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsearchitem_KeyPress);
             // 
             // dataGridView1
             // 
@@ -151,6 +152,7 @@
             this.txtitem.Name = "txtitem";
             this.txtitem.Size = new System.Drawing.Size(233, 20);
             this.txtitem.TabIndex = 7;
+            this.txtitem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtitem_KeyPress);
             // 
             // Price
             // 
@@ -170,6 +172,8 @@
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(233, 20);
             this.txtprice.TabIndex = 9;
+           // this.txtprice.TextChanged += new System.EventHandler(this.txtprice_TextChanged);
+            this.txtprice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprice_KeyPress);
             // 
             // btnupdate
             // 

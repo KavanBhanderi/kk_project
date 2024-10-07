@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace K_K
 {
@@ -81,6 +82,21 @@ namespace K_K
             Remove remove = new Remove();
             this.Close();
             remove.Show();
+        }
+
+        private void txtsearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                txtsearch.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Character", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtsearch.ForeColor = Color.Black;
+            }
         }
     }
 }

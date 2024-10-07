@@ -123,6 +123,7 @@
             this.txtItem.Name = "txtItem";
             this.txtItem.Size = new System.Drawing.Size(464, 25);
             this.txtItem.TabIndex = 5;
+            this.txtItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtItem_KeyPress);
             // 
             // txtprice
             // 
@@ -132,6 +133,8 @@
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(464, 25);
             this.txtprice.TabIndex = 6;
+            //this.txtprice.TextChanged += new System.EventHandler(this.txtprice_TextChanged);
+            this.txtprice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprice_KeyPress);
             // 
             // Add_Item
             // 

@@ -32,9 +32,7 @@ namespace K_K
             txtprice.Text = string.Empty;
             txtquantity.Text = string.Empty;
             txttotal.Text = string.Empty;
-            dataGridView1.Rows.Clear();
-            totalrs.Text = "Rs. 00";
-            customertxt.Text = string.Empty;    
+              
         }
         public void loaddata()
         {
@@ -160,6 +158,7 @@ namespace K_K
 
                 total += int.Parse(txttotal.Text);
                 totalrs.Text = "Rs." + total;
+                cleardata();
             }
             else
             {
@@ -177,7 +176,7 @@ namespace K_K
                 int rowIndex = dataGridView1.CurrentCell.RowIndex;
                 if (!dataGridView1.Rows[rowIndex].IsNewRow)
                 {
-                    // Commit any pending changes in the DataGridView
+                   
                     if (dataGridView1.IsCurrentRowDirty)
                     {
                         dataGridView1.EndEdit();
@@ -189,8 +188,8 @@ namespace K_K
                 }
                 else
                 {
-                    // The row is a new uncommitted row
-                    MessageBox.Show("Cannot delete a new row that hasn't been committed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
+                    MessageBox.Show("No Data Available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -212,11 +211,14 @@ namespace K_K
                         if (dataGridView1.Rows.Count == 1 && dataGridView1.Rows[0].IsNewRow)
                         {
                             MessageBox.Show("No data available to print. Please enter data first.", "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return; // Exit early
+                            return;
                         }
                         printPreviewDialog1.Document = printDocument1;
                         printPreviewDialog1.ShowDialog();
-                        cleardata(); // Clear or reset your DataGridView as needed
+                        dataGridView1.Rows.Clear();
+                        totalrs.Text = "Rs. 00";
+                        customertxt.Text = "";
+                        cleardata();
                     }
                     else
                     {
@@ -230,14 +232,9 @@ namespace K_K
             }
             catch (Exception ex)
             {
-                // Handle any unexpected exceptions
+                
                 MessageBox.Show("An error occurred: " + ex.Message, "Print Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -269,42 +266,35 @@ namespace K_K
             remove.Show();
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void search_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void totalrs_Click(object sender, EventArgs e)
-        {
-
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                search.ForeColor = Color.Red;
+                MessageBox.Show("Please Only Character", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                search.ForeColor = Color.Black;
+            }
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
-            Image backgroundImage = Image.FromFile(@"D:\cafe_management\Cafe_Logo.jpg");
+            Image backgroundImage = Image.FromFile(@"C:\Kavan\Project\kk_project\Cafe_Logo.jpg");
 
-            // Define the watermark transparency
-            float transparency = 0.1f;  // 10% opacity for watermark effect
+            float transparency = 0.1f;  
             ImageAttributes imageAttributes = new ImageAttributes();
             ColorMatrix colorMatrix = new ColorMatrix
             {
-                Matrix33 = transparency  // Apply the transparency to the alpha channel
+                Matrix33 = transparency 
             };
             imageAttributes.SetColorMatrix(colorMatrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
 
-            // Draw the background image scaled to the page size
-            Rectangle destRect = e.MarginBounds; // Set to fit within margins
+            
+            Rectangle destRect = e.MarginBounds; 
             g.DrawImage(
                 backgroundImage,
                 destRect,
@@ -324,11 +314,10 @@ namespace K_K
             string titleText = "K & K Cafe";
             SizeF titleSize = g.MeasureString(titleText,font);
 
-            // Calculate the center position (horizontally)
+            
             float z = (e.MarginBounds.Width - titleSize.Width) / 2 + e.MarginBounds.Left;
             float h = e.MarginBounds.Top;
 
-            // Draw the text centered on the page
             g.DrawString(titleText,new Font("Roman",12,FontStyle.Bold), brush, z,h);
       
             y += 40;
@@ -341,7 +330,7 @@ namespace K_K
             g.DrawString("Date: " + DateTime.Now.ToString("dd/MM/yyyy"), font, brush, x, y);
             y += 40;
 
-            //g.DrawString("Customer Name", new Font("Roman", 12, FontStyle.Bold), brush, x, y);
+            
             g.DrawString("Item Name", new Font("Roman", 12,FontStyle.Bold) , brush, x, y);
             g.DrawString("Unit Price", new Font("Roman", 12, FontStyle.Bold), brush, x+200, y);
             g.DrawString("Quantity", new Font("Roman", 12, FontStyle.Bold), brush, x + 300, y);
